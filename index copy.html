@@ -4,8 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/><meta name="description" content="Automation, AI Document Automation, dan Web Automation untuk bisnis."/><title>Yusuf Alfi — Automation · AI · Web Data</title></head><body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body></html> -->
 
-
-<!doctype html>
+<!-- <!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8"/>
@@ -13,7 +12,7 @@
     <meta name="description" content="Automation, AI Document Automation, dan Web Automation untuk bisnis."/>
     <title>Yusuf Alfi — Automation · AI · Web Data</title>
     <style>
-      /* Hide Google Translate Banner Bar */
+      /* Matikan Banner Top-Bar Google Translate */
       .goog-te-banner-frame,
       .goog-te-banner,
       .skiptranslate iframe,
@@ -23,14 +22,17 @@
         visibility: hidden !important;
         height: 0 !important;
         width: 0 !important;
+        opacity: 0 !important;
       }
 
+      /* Paksa HTML dan Body balik ke paling atas (menghapus dorongan margin bawaan Google) */
       html, body {
         top: 0px !important;
         position: static !important;
         margin-top: 0px !important;
       }
 
+      /* Sembunyikan Pop-up Tooltip Google saat text di-hover */
       #goog-gt-tt,
       .goog-te-balloon-frame,
       .goog-te-spinner-pos {
@@ -42,19 +44,15 @@
         box-shadow: none !important;
       }
 
-      /* Style Widget Translate Mengikuti Tema Neo-Brutalism Navbar */
+      /* Kustomisasi Widget Pilihan Bahasa (Neo-Brutalist) */
       .goog-te-gadget-simple {
         background-color: #ffffff !important;
-        border: 2px solid #000000 !important;
-        padding: 6px 10px !important;
-        border-radius: 6px !important;
-        box-shadow: 2px 2px 0px #000000 !important;
+        border: 3px solid #000000 !important;
+        padding: 8px 12px !important;
+        border-radius: 8px !important;
+        box-shadow: 4px 4px 0px #000000 !important;
         font-family: inherit !important;
         font-weight: 700 !important;
-        font-size: 14px !important;
-        cursor: pointer;
-        display: flex !important;
-        align-items: center;
       }
 
       .goog-te-gadget-simple .goog-te-menu-value span {
@@ -67,6 +65,9 @@
     </style>
   </head>
   <body>
+    <!-- Widget Pilihan Bahasa (Pojok Kanan Bawah) -->
+    <div id="google_translate_element" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;"></div>
+
     <div id="root"></div>
 
     <!-- Script Google Translate -->
@@ -83,4 +84,4 @@
 
     <script type="module" src="/src/main.jsx"></script>
   </body>
-</html>
+</html> -->

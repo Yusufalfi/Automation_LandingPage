@@ -2064,5 +2064,57 @@ mark{
 }
 
 
+/* Styling Google Translate agar 100% Matching dengan Navbar Neo-Brutalism */
+#google_translate_element {
+  display: inline-flex;
+  align-items: center;
+}
+
+.goog-te-gadget-simple {
+  background-color: #ccff00 !important; /* Kuning neon khas tombol WhatsApp kamu */
+  border: 3px solid #000000 !important;  /* Border hitam tebal */
+  padding: 10px 16px !important;         /* Tinggi & padding presisi sejajar */
+  border-radius: 4px !important;
+  box-shadow: 3px 3px 0px #000000 !important; /* Shadow khas Neo-Brutalist */
+  font-family: inherit !important;
+  font-weight: 800 !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+/* Efek Klik / Press */
+.goog-te-gadget-simple:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000000 !important;
+}
+
+/* Teks Pilihan Bahasa */
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: #000000 !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span {
+  color: #000000 !important;
+  border: none !important;
+}
+
+/* Hilangkan separator garis bawaan & logo Google */
+.goog-te-gadget-simple .goog-te-menu-value span:nth-child(2),
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+/* Warna panah dropdown kecil */
+.goog-te-gadget-simple .goog-te-menu-value span:nth-child(3) {
+  color: #000000 !important;
+  font-size: 10px !important;
+  margin-left: 6px !important;
+}
+
+
 
 
