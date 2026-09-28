@@ -2064,57 +2064,111 @@ mark{
 }
 
 
-/* Styling Google Translate agar 100% Matching dengan Navbar Neo-Brutalism */
-#google_translate_element {
+/* ========================================================
+   GOOGLE TRANSLATE - NEO-BRUTALIST PILL TOGGLE
+   ======================================================== */
+
+/* Container Nav Actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 1. Custom Language Switcher Pill (Neo-Brutalism Style) */
+.lang-switcher {
   display: inline-flex;
   align-items: center;
+  background-color: #ffffff;
+  border: 2.5px solid #000000;
+  border-radius: 50px;
+  padding: 3px;
+  gap: 3px;
+  box-shadow: 3px 3px 0px #000000; /* Hard shadow khas Neo-Brutalist */
+  transition: all 0.15s ease-in-out;
 }
 
-.goog-te-gadget-simple {
-  background-color: #ccff00 !important; /* Kuning neon khas tombol WhatsApp kamu */
-  border: 3px solid #000000 !important;  /* Border hitam tebal */
-  padding: 10px 16px !important;         /* Tinggi & padding presisi sejajar */
-  border-radius: 4px !important;
-  box-shadow: 3px 3px 0px #000000 !important; /* Shadow khas Neo-Brutalist */
-  font-family: inherit !important;
-  font-weight: 800 !important;
-  font-size: 14px !important;
-  line-height: 1 !important;
+.lang-btn {
+  background: transparent;
+  border: 2px solid transparent; /* Reserve space biar ga goyang saat active */
+  border-radius: 50px;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #000000;
   cursor: pointer;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
-/* Efek Klik / Press */
-.goog-te-gadget-simple:active {
-  transform: translate(2px, 2px);
+/* State ketika bahasa terpilih (Kuning Neon / Hitam Aksentil) */
+.lang-btn.active {
+  background-color: #ccff00; /* Warna kuning/lime neon khas web kamu */
+  border: 2px solid #000000;
+  color: #000000;
+  font-weight: 900;
+}
+
+/* Hover effect di tombol yang tidak aktif */
+.lang-btn:not(.active):hover {
+  background-color: #f0f0f0;
+}
+
+/* 2. Tombol WhatsApp (Neo-Brutalism Style) */
+.navcta {
+  background-color: #ccff00 !important; /* Warna kuning neon */
+  color: #000000 !important;
+  border: 2.5px solid #000000 !important;
+  padding: 7px 20px !important;
+  border-radius: 50px !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  box-shadow: 3px 3px 0px #000000 !important; /* Hard shadow tajam */
+  transition: all 0.15s ease-in-out !important;
+}
+
+/* Effect tekan/hover Neo-Brutalism */
+.navcta:hover {
+  transform: translate(-1px, -1px) !important;
+  box-shadow: 4px 4px 0px #000000 !important;
+}
+
+.navcta:active {
+  transform: translate(2px, 2px) !important;
   box-shadow: 1px 1px 0px #000000 !important;
 }
 
-/* Teks Pilihan Bahasa */
-.goog-te-gadget-simple .goog-te-menu-value {
-  color: #000000 !important;
-  font-weight: 800 !important;
-  text-transform: uppercase;
-}
-
-.goog-te-gadget-simple .goog-te-menu-value span {
-  color: #000000 !important;
-  border: none !important;
-}
-
-/* Hilangkan separator garis bawaan & logo Google */
-.goog-te-gadget-simple .goog-te-menu-value span:nth-child(2),
-.goog-te-gadget-icon {
+/* Sembunyikan Widget Google Default & Banner Atas */
+.goog-te-banner-frame,
+.skiptranslate,
+#google_translate_element {
   display: none !important;
 }
 
-/* Warna panah dropdown kecil */
-.goog-te-gadget-simple .goog-te-menu-value span:nth-child(3) {
-  color: #000000 !important;
-  font-size: 10px !important;
-  margin-left: 6px !important;
+body {
+  top: 0px !important;
 }
 
+
+
+@media (max-width: 768px) {
+  /* Sembunyikan Tombol Chat WhatsApp di Mobile */
+  .navcta {
+    display: none !important;
+  }
+
+  /* Opsional: Sesuaikan ukuran toggle ID/EN di HP agar pas */
+  .lang-switcher {
+    padding: 2px;
+  }
+
+  .lang-btn {
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+}
 
 
 
