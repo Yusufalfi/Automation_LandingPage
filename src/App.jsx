@@ -12,6 +12,7 @@ import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import AllProjectsPage from './components/AllProjectsPage';
 import ProjectModal from './components/ProjectModal';
+import  AutomationSection from './components/AutomationSection'
 
 export default function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -71,6 +72,7 @@ export default function App() {
             <ProofSection />
             <FAQSection />
             <CTASection />
+            <AutomationSection /> 
           </>
         ) : (
           <AllProjectsPage 
