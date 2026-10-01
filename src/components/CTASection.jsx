@@ -47,6 +47,10 @@ export default function CtaSection() {
               <div className="action-ticket-box">
                 <small className="ticket-label">SESI DISKUSI ALUR KERJA</small>
                 <div className="ticket-price">GRATIS 20 MENIT</div>
+
+                <span className="ticket-subtext">
+                  Diskusi via Chat / Google Meet
+                </span>
                 
                 <a 
                   href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20diskusi%20otomasi%20proses%20bisnis" 
@@ -59,9 +63,7 @@ export default function CtaSection() {
                   <ArrowUpRight size={22} className="arrow-icon" />
                 </a>
 
-                <span className="ticket-subtext">
-                  ⚡ Diskusi via Chat / Google Meet
-                </span>
+                
               </div>
             </div>
 

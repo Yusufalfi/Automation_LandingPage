@@ -72,7 +72,7 @@ export default function App() {
             <ProofSection />
             <FAQSection />
             <CTASection />
-            <AutomationSection /> 
+            {/* <AutomationSection />  */}
           </>
         ) : (
           <AllProjectsPage 

@@ -89,7 +89,7 @@ export const projects = [
     n: "01",
     tag: "RPA + AI",
     title: "Invoice Processing System",
-    desc: "Otomatisasi proses invoice dari PDF hingga masuk ke database menggunakan AI OCR.",
+    desc: "Otomatisasi proses & Extract data invoice dari PDF hingga masuk ke system / report menggunakan AI OCR.",
     youtubeId: "dQw4w9WgXcQ", // Ganti dengan ID video YouTube lu
     beforeTime: "2-3 jam/hari entri data manual & rawan eror",
     afterTime: "< 2 menit ekstraksi otomatis berakurasi tinggi",
@@ -99,6 +99,7 @@ export const projects = [
     impact: "Menghemat waktu hingga 80% dan mempercepat approval pembayaran.",
     status: "LIVE",
     bannerColor: "#b2f5ea",
+    flow: "PDF → AI Extraction → Validation → Database",
     techs: ["UiPath", "ChatGPT API", "IDP / OCR", "PostgreSQL"]
   },
   {
@@ -106,7 +107,7 @@ export const projects = [
     n: "02",
     tag: "WEB SCRAPING",
     title: "Automated Web Scraper",
-    desc: "Mengambil data lowongan kerja & harga pasar dari ribuan halaman secara terstruktur.",
+    desc: "Ekstraksi data lowongan kerja secara terstruktur dari ribuan halaman untuk analisis tren pasar tenaga kerja.",
     youtubeId: "dQw4w9WgXcQ", // Ganti dengan ID video YouTube lu
     beforeTime: "Copy-paste manual ratusan halaman web seharian",
     afterTime: "Proses crawling kilat secara otomatis via script",
@@ -116,6 +117,7 @@ export const projects = [
     impact: "Pengambilan data skala besar 10x lebih cepat dibanding metode konvensional.",
     status: "LIVE",
     bannerColor: "#8ce8ff",
+    flow: "URL → Filter → Scraping → Clean Data → Excel / JSON",
     techs: ["Python", "Playwright", "Pandas", "Excel / JSON"]
   },
   {
@@ -123,7 +125,7 @@ export const projects = [
     n: "03",
     tag: "RPA",
     title: "Automated Billing & Escalation",
-    desc: "Memantau tanggal jatuh tempo invoice dan mengirim email pengingat berjenjang.",
+    desc: "Pemantauan jatuh tempo tagihan dan pengiriman email reminder berjenjang secara otomatis",
     youtubeId: "dQw4w9WgXcQ", // Ganti dengan ID video YouTube lu
     beforeTime: "Cek manual tanggal Excel satu per satu tiap pagi",
     afterTime: "Email pengingat terkirim otomatis tepat waktu",
@@ -133,6 +135,7 @@ export const projects = [
     impact: "100% akurasi penagihan & memperlancar arus kas bisnis.",
     status: "LIVE",
     bannerColor: "#ffd3e0",
+    flow: "Database → Due Date → Business Rules → Email",
     techs: ["UiPath", "SQL Database", "SMTP / Email Engine"]
   }
 ];

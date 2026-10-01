@@ -1350,6 +1350,113 @@ mark{
 }
 
 
+/* Container Utama Workflow */
+.workflow {
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.workflow-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #000;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Track Pembungkus Line & Node */
+.workflow-track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 4px;
+  /* background: #f8fafc; */
+  /* border: 2px solid #000; */
+  border-radius: 6px;
+  /* box-shadow: 2px 2px 0px #000; */
+  overflow: hidden;
+}
+
+/* Garis Putus-putus Horizontal Latar Belakang */
+.workflow-track::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0;
+  border-top: 2px dashed #000;
+  z-index: 1;
+}
+
+/* Partikel Bulatan Oranye Berjalan dari Kiri ke Kanan */
+.workflow-particle {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  border-radius: 50%;
+  /* background: #ff7a00; */
+  background: #ccff00;
+  border: 1px solid #000;
+  box-shadow: 0 0 8px rgba(238, 255, 0, 0.8);
+  z-index: 2;
+  pointer-events: none;
+  
+  /* Animasi meluncur horizontal */
+  /* animation: workflow-slide-right 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite; */
+  animation: workflow-slide-right 5.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes workflow-slide-right {
+  0% {
+    left: 8px;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  12% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  88% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    left: calc(100% - 16px);
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+/* Badge/Node Langkah Workflow */
+.workflow-step-node {
+  position: relative;
+  font-size: 9px !important;
+  z-index: 3;
+  padding: 2px 5px;
+  background: #ffffff;
+  border: 1.5px solid #000;
+  border-radius: 4px;
+  font-size: 8px;
+  font-weight: 700;
+  color: #000;
+  box-shadow: 1px 1px 0px #000;
+  white-space: nowrap;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.workflow-step-node:hover {
+  transform: translateY(-1px);
+  background: #ccff00; /* Warna hijau neon khas brutalism */
+}
+
+
 /* ============================================================
    PROCESS SECTION - NEO-BRUTALIST TIMELINE SPLIT
    ============================================================ */
@@ -2004,13 +2111,13 @@ mark{
   font-size: 22px;
   font-weight: 900;
   letter-spacing: -0.5px;
-  margin-bottom: 20px;
-  color: #101010;
-  background: #ffffff;
-  border: 1.5px solid #101010;
+  /* margin-bottom: 20px; */
+  /* color: #101010; */
+  /* background: #ffffff; */
+  /* border: 1.5px solid #101010; */
   padding: 4px 12px;
   display: inline-block;
-  box-shadow: 2px 2px 0 #101010;
+  /* box-shadow: 2px 2px 0 #101010;/ */
 }
 
 /* Tombol WA Berwarna Hijau Acid Kontras Tinggi */
