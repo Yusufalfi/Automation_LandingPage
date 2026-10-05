@@ -1,32 +1,3 @@
-// import { problems } from '../data/siteData';
-
-// export default function ProblemSection() {
-//   return (
-//     <div className="problem-grid-bg">
-//       <section id='problem' className="section container">
-//         <div className="head">
-//           <div>
-//             <small className="tag-eyebrow">01 / MASALAH</small>
-//             <h2>Mungkin ini terjadi<br/>di bisnis Anda.</h2>
-//           </div>
-//           <p>Tidak semua pekerjaan harus diotomatisasi. Kita cari bagian yang repetitif dan benar-benar menghabiskan waktu.</p>
-//         </div>
-//         <div className="grid3">
-//           {problems.map(x => (
-//             <article className="neo-card" key={x[0]}>
-//               <span className="tag">{x[0]}</span>
-//               <h3>{x[1]}</h3>
-//               <p>{x[2]}</p>
-//               <div className="solution"> {x[3]}</div>
-//             </article>
-//           ))}
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }
-
-
 import React from 'react';
 import { MessageSquare, ArrowUpRight } from 'lucide-react';
 import { problems } from '../data/siteData';

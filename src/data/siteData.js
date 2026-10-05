@@ -140,6 +140,62 @@ export const projects = [
   }
 ];
 
+
+// const advantages = [
+  //   {
+  //     icon: <Clock size={28} />,
+  //     badge: 'EFISIENSI WAKTU',
+  //     title: 'Pangkas Beban Kerja Hingga 80%',
+  //     description: 'Ucapkan selamat tinggal pada entri data dan tugas berulang yang menyita waktu. Bot menyelesaikan alur kerja rumit yang butuh berjam-jam hanya dalam beberapa detik.'
+  //   },
+  //   {
+  //     icon: <ShieldCheck size={28} />,
+  //     badge: 'AKURASI TINGGI',
+  //     title: '0% Human Error & Sangat Konstan',
+  //     description: 'Manusia bisa lelah, kurang fokus, dan salah ketik. Bot bekerja dengan presisi 100% mengikuti aturan bisnis Anda tanpa pernah salah input.'
+  //   },
+  //   {
+  //     icon: <TrendingUp size={28} />,
+  //     badge: 'PRODUKTIVITAS 24/7',
+  //     title: 'Jalankan Tugas Kapan Saja & Di Mana Saja',
+  //     description: 'Bot bisa dijadwalkan berjalan harian, mingguan, atau real-time. Operasional bisnis Anda tetap aktif dan memproses data bahkan saat tim sedang tidur.'
+  //   },
+  //   {
+  //     icon: <Cpu size={28} />,
+  //     badge: 'SKALABILITAS BISNIS',
+  //     title: 'Fokus ke Strategi & Scaling Bisnis',
+  //     description: 'Biarkan otomasi menangani pekerjaan kasar (scraping, input data, parsing PDF). Tim Anda bisa mengalihkan fokus ke keputusan strategis yang menaikkan omset.'
+  //   }
+  // ];
+
+export const advantages = [
+  {
+    icon: 'Clock',
+    badge: 'HEMAT WAKTU',
+    title: 'Kurangi Pekerjaan Manual yang Berulang',
+    description: 'Serahkan tugas seperti input data, scraping, pengecekan, dan pemindahan data ke sistem otomatis. Tim bisa menghemat waktu untuk pekerjaan yang lebih penting.'
+  },
+  {
+    icon: 'ShieldCheck',
+    badge: 'LEBIH KONSISTEN',
+    title: 'Proses Kerja Lebih Rapi & Konsisten',
+    description: 'Setiap proses dijalankan berdasarkan aturan yang sudah ditentukan. Risiko salah input dan langkah yang terlewat bisa dikurangi dibanding proses manual.'
+  },
+  {
+    icon: 'TrendingUp',
+    badge: 'BERJALAN OTOMATIS',
+    title: 'Jalankan Proses Tanpa Harus Dipantau Terus',
+    description: 'Automation bisa dijalankan berdasarkan jadwal atau kondisi tertentu. Setelah sistem berjalan, proses dapat terus bekerja tanpa perlu dilakukan satu per satu secara manual.'
+  },
+  {
+    icon: 'Cpu',
+    badge: 'MUDAH DIKEMBANGKAN',
+    title: 'Bangun Sistem yang Bisa Ikut Bertumbuh',
+    description: 'Mulai dari satu workflow sederhana, lalu kembangkan sesuai kebutuhan. Scraping, integrasi API, parsing dokumen, hingga proses internal bisa dibuat dalam satu alur kerja.'
+  }
+];
+
+
 export const processSteps = [
   ['01','ANALYZE','Mapping & Analisis Kebutuhan','Menganalisis alur kerja saat ini, mengidentifikasi pemborosan waktu (bottleneck), dan mengukur potensi efisiensi.'],
   ['02','DESIGN','Perancangan Arsitektur Solusi','Merancang skema automasi terbaik menggunakan kombinasi RPA, Python, atau AI sesuai anggaran dan kebutuhan.'],

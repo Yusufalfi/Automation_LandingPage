@@ -68,8 +68,8 @@ export default function App() {
               onViewAllClick={handleGoToAllProjects} 
               onOpenDemo={(project) => setActiveVideo(project)}
             />
-            <ProcessSection />
             <ProofSection />
+            <ProcessSection />
             <FAQSection />
             <CTASection />
             {/* <AutomationSection />  */}

@@ -1,8 +1,3 @@
-// import { processSteps } from '../data/siteData';
-
-// export default function ProcessSection(){
-//   return <section id="process" className="section process"><div className="container"><div className="head"><div><small>04 / CARA KERJA</small><h2>Dari proses manual<br/>sampai automation jalan.</h2></div><p>Teknologi dipilih setelah prosesnya dipahami, bukan sebaliknya.</p></div><div className="grid4">{processSteps.map(x=><article className="neo-card step" key={x[0]}><small>{x[0]} / {x[1]}</small><h3>{x[2]}</h3><p>{x[3]}</p></article>)}</div></div></section>;
-// }
 
 import React, { useState } from 'react';
 import { processSteps } from '../data/siteData';
@@ -16,7 +11,7 @@ export default function ProcessSection() {
      
         <div className="head">
           <div>
-            <small className="tag-eyebrow">04 / METODE KERJA</small>
+            <small className="tag-eyebrow">05 / METODE KERJA</small>
             <h2>
               Bagaimana Bot <br /> Anda Dibangun
             </h2>
