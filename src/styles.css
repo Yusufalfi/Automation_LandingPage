@@ -3011,3 +3011,37 @@ body {
 }
 
 
+
+/* * Styling bullet list untuk RESULT di dalam card */ */
+/* Paksa semua teks paragraf & list di dalam modal agar ukurannya seragam */
+.modal-right-col .detail-item,
+.modal-right-col .detail-item p,
+.modal-right-col .detail-item span,
+.modal-right-col .detail-item ul,
+.modal-right-col .detail-item li {
+  /* font-size: 14px !important; */
+  line-height: 1.6 !important;
+  color: #222222 !important;
+}
+
+/* Khusus kerapihan bullet point-nya */
+.modal-right-col .detail-item ul.modal-detail-list {
+  margin-top: 6px !important;
+  padding-left: 20px !important;
+  list-style-type: disc !important;
+}
+
+.modal-right-col .detail-item ul.modal-detail-list li {
+  margin-bottom: 6px !important;
+  display: list-item !important;
+}
+
+.modal-right-col .detail-item ul.modal-detail-list li:last-child {
+  margin-bottom: 0 !important;
+}
+
+
+
+
+
+

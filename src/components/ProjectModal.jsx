@@ -4,6 +4,14 @@ import { X, Target, AlertTriangle, Lightbulb, CheckCircle2 } from 'lucide-react'
 export default function ProjectModal({ activeVideo, onClose }) {
   if (!activeVideo) return null;
 
+  // Style seragam untuk semua isi teks (Pmaupun Li)
+  const textContentStyle = {
+    fontSize: '0.9rem',
+    lineHeight: '1.6',
+    color: '#333333',
+    margin: 0
+  };
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-card-rich" onClick={(e) => e.stopPropagation()}>
@@ -82,28 +90,48 @@ export default function ProjectModal({ activeVideo, onClose }) {
             {activeVideo.goal && (
               <div className="detail-item">
                 <h5><Target size={16} strokeWidth={2.5} /> GOAL</h5>
-                <p>{activeVideo.goal}</p>
+                <p style={textContentStyle}>{activeVideo.goal}</p>
               </div>
             )}
 
             {activeVideo.problem && (
               <div className="detail-item">
                 <h5 className="problem-text"><AlertTriangle size={16} strokeWidth={2.5} /> PROBLEM</h5>
-                <p>{activeVideo.problem}</p>
+                <p style={textContentStyle}>{activeVideo.problem}</p>
               </div>
             )}
 
             {activeVideo.solution && (
               <div className="detail-item">
                 <h5 className="solution-text"><Lightbulb size={16} strokeWidth={2.5} /> SOLUTION</h5>
-                <p>{activeVideo.solution}</p>
+                {Array.isArray(activeVideo.solution) ? (
+                  <ul className="modal-detail-list" style={{ margin: '6px 0 0 0', paddingLeft: '18px', listStyleType: 'disc' }}>
+                    {activeVideo.solution.map((item, idx) => (
+                      <li key={idx} style={{ ...textContentStyle, marginBottom: '6px', display: 'list-item' }}>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p style={textContentStyle}>{activeVideo.solution}</p>
+                )}
               </div>
             )}
 
             {activeVideo.impact && (
               <div className="detail-item">
                 <h5 className="impact-text"><CheckCircle2 size={16} strokeWidth={2.5} /> IMPACT</h5>
-                <p>{activeVideo.impact}</p>
+                {Array.isArray(activeVideo.impact) ? (
+                  <ul className="modal-detail-list" style={{ margin: '6px 0 0 0', paddingLeft: '18px', listStyleType: 'disc' }}>
+                    {activeVideo.impact.map((item, idx) => (
+                      <li key={idx} style={{ ...textContentStyle, marginBottom: '6px', display: 'list-item' }}>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p style={textContentStyle}>{activeVideo.impact}</p>
+                )}
               </div>
             )}
           </div>

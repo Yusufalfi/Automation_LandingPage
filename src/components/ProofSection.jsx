@@ -1,4 +1,4 @@
-// File: komponen ProofSection Anda
+
 import React from 'react';
 import { ArrowRight, Zap, Clock, ShieldCheck, TrendingUp, Cpu } from 'lucide-react';
 import { advantages } from '../data/siteData'; 

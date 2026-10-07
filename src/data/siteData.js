@@ -55,32 +55,62 @@ export const services = [
 
 export const tools = ['RPA tools', 'Python', 'Playwright', 'SQL', 'AI / LLM', 'Javascript',];
 
+
 // export const projects = [
 //   {
-//   n: "01",
-//   tag: "AI + AUTOMATION",
-//   title: "Invoice Processing",
-//   desc: "Otomatisasi proses invoice dari PDF hingga masuk ke database.",
-//   flow: "PDF → AI Extraction → Validation → Database",
-//   impact: "Less manual data entry"
-// },
-// {
-//   n: "02",
-//   tag: "PYTHON + PLAYWRIGHT",
-//   title: "Automated Web Scraper",
-//   desc: "Mengambil data dari banyak halaman secara otomatis dan terstruktur.",
-//   flow: "URL → Filter → Scraping → Clean Data → Excel / JSON",
-//   impact: "Automated large-scale data collection"
-// },
-// {
-//   n: "03",
-//   tag: "RPA + DATABASE",
-//   title: "Automated Billing",
-//   desc: "Memantau invoice jatuh tempo dan mengirim reminder secara otomatis.",
-//   flow: "Database → Due Date → Business Rules → Email",
-//   impact: "Less manual follow-up"
-// }
- 
+//     id: "proj-01",
+//     n: "01",
+//     tag: "RPA + AI",
+//     title: "Invoice Processing System",
+//     desc: "Otomatisasi proses & Extract data invoice dari PDF hingga masuk ke system / report menggunakan AI OCR.",
+//     youtubeId: "0J8tsSoi6N8?si=Gs2SnfZmy2I2Akys", // Ganti dengan ID video YouTube lu
+//     beforeTime: "2-3 jam/hari entri data manual & rawan eror",
+//     afterTime: "< 2 menit ekstraksi otomatis berakurasi tinggi",
+//     goal: "Mengotomatiskan proses ekstraksi data dari Invoice dan mengubahnya menjadi data terstruktur yang siap digunakan di Excel.",
+//     problem: "Faktur datang dalam berbagai format dan tata letak. Sebagian berupa dokumen hasil scan dalam berbagai bahasa (Inggris, Mandarin, Jepang, Rusia). Proses manual mengharuskan pengguna membuka setiap faktur, mencari detail yang diperlukan, lalu mengetikkannya secara manual ke dalam Excel.",
+//     solution: "Membangun pipeline otomatis end-to-end menggunakan UiPath + ChatGPT API untuk membaca Invoice, mengekstrak metadata penting, dan secara otomatis mengisi template Excel. Proses ini disusun dengan UiPath REFramework untuk memastikan kontrol proses yang kuat serta pencatatan log yang terstruktur",
+//     impact: "Proses input manual berhasil dihilangkan sepenuhnya. Metadata utama faktur (Nomor Faktur, Tanggal, Vendor, Customer, Subtotal, Pajak, Total, Mata Uang) kini diekstrak secara otomatis ke dalam format terstruktur yang siap dipakai, Menghemat waktu hingga 80% dan mempercepat approval pembayaran.",
+//     status: "LIVE",
+//     bannerColor: "#b2f5ea",
+//     flow: "PDF → AI Extraction → Validation → Database",
+//     techs: ["UiPath", "ChatGPT API", "IDP / OCR", "PostgreSQL"]
+//   },
+//   {
+//     id: "proj-02",
+//     n: "02",
+//     tag: "WEB SCRAPING",
+//     title: "Automated Web Scraper",
+//     desc: "Ekstraksi data lowongan kerja secara terstruktur dari ribuan halaman untuk analisis tren pasar tenaga kerja.",
+//     youtubeId: "_QG5EbNslBU?si=W4LR1ZR6dr3vbK4F",
+//     beforeTime: "Mengotomatiskan proses pencarian dan pengumpulan data lowongan kerja agar lebih cepat, fleksibel, dan langsung siap digunakan untuk analisis.",
+//     afterTime: "Proses crawling kilat secara otomatis via script",
+//     goal: "Mengumpulkan data publik dalam jumlah besar tanpa terblokir sistem anti-scraping.",
+//     problem: "Pencarian dan pengumpulan lowongan kerja secara manual memakan waktu lama. Pengguna harus membuka tiap halaman detail dan menyusun ulang data ke format terstruktur.",
+//     solution: "Mengembangkan desktop-based scraper dengan Python, Playwright, Tkinter. Fitur utama: Parameter pencarian: kata kunci, gaji minimum, tanggal posting, jumlah data maksimal. Format ekspor: JSON / Excel. Data yang diambil: Judul Pekerjaan, Perusahaan, Gaji, Lokasi, Deskripsi Singkat, Link, Tanggal Posting, Jenis Pekerjaan, Deskripsi Lengkap. Optimasi performa: Pemrosesan paralel hingga 5 tab. Log aktivitas real-time. Error handling untuk timeout/gagal load. Progress tracking (“Tab X dari Y selesai”).",
+//     impact: "Proses pencarian lowongan lebih cepat dan fleksibel, Pengguna dapat memantau progres scraping secara real-time.Data langsung tersedia dalam format siap pakai (JSON/Excel) untuk analisis atau langkah berikutnya.",
+//     status: "LIVE",
+//     bannerColor: "#8ce8ff",
+//     flow: "URL → Filter → Scraping → Clean Data → Excel / JSON",
+//     techs: ["Python", "Playwright", "Pandas", "Excel / JSON"]
+//   },
+//   {
+//     id: "proj-03",
+//     n: "03",
+//     tag: "RPA",
+//     title: "Automated Billing & Escalation",
+//     desc: "Pemantauan jatuh tempo tagihan dan pengiriman email reminder berjenjang secara otomatis",
+//     youtubeId: "dQw4w9WgXcQ", // Ganti dengan ID video YouTube lu
+//     beforeTime: "Cek manual tanggal Excel satu per satu tiap pagi",
+//     afterTime: "Email pengingat terkirim otomatis tepat waktu",
+//     goal: "Memastikan tidak ada tagihan pembayaran yang terlewat atau terlambat di-follow up.",
+//     problem: "Keterlambatan follow-up tagihan mengganggu cash flow perusahaan.",
+//     solution: "Workflow RPA yang membaca database jadwal tagihan dan otomatis mengirim email laporan & reminder.",
+//     impact: "100% akurasi penagihan & memperlancar arus kas bisnis.",
+//     status: "LIVE",
+//     bannerColor: "#ffd3e0",
+//     flow: "Database → Due Date → Business Rules → Email",
+//     techs: ["UiPath", "SQL Database", "SMTP / Email Engine"]
+//   }
 // ];
 
 export const projects = [
@@ -90,13 +120,25 @@ export const projects = [
     tag: "RPA + AI",
     title: "Invoice Processing System",
     desc: "Otomatisasi proses & Extract data invoice dari PDF hingga masuk ke system / report menggunakan AI OCR.",
-    youtubeId: "dQw4w9WgXcQ", // Ganti dengan ID video YouTube lu
+    youtubeId: "0J8tsSoi6N8?si=Gs2SnfZmy2I2Akys",
     beforeTime: "2-3 jam/hari entri data manual & rawan eror",
     afterTime: "< 2 menit ekstraksi otomatis berakurasi tinggi",
-    goal: "Mengotomatiskan ekstraksi data dari PDF invoice multi-format ke Excel/Database secara terstruktur.",
-    problem: "Invoice datang dengan format layout heterogen, pengetikan manual memakan waktu lama dan sering terjadi kesalahan input.",
-    solution: "Membangun workflow otomatisasi end-to-end dengan UiPath + Intelligent Document Processing (IDP) / OpenAI API.",
-    impact: "Menghemat waktu hingga 80% dan mempercepat approval pembayaran.",
+    goal: "Mengotomatiskan proses ekstraksi data dari Invoice dan mengubahnya menjadi data terstruktur yang siap digunakan di Excel.",
+    problem: "Faktur datang dalam berbagai format dan tata letak, termasuk dokumen hasil scan ber-multibahasa. Proses manual memakan waktu karena harus input satu per satu ke Excel.",
+    
+    solution: [
+      "Pipeline otomatis end-to-end menggunakan UiPath + ChatGPT API.",
+      "Membaca invoice, mengekstrak metadata penting (No Faktur, Tanggal, Vendor, Subtotal, Pajak, dll).",
+      "Mengisi template Excel secara otomatis tanpa intervensi manual.",
+      "Dibangun di atas UiPath REFramework untuk eksekusi stabil dan pencatatan log terstruktur."
+    ],
+    
+    impact: [
+      "Input manual berhasil dihilangkan 100%.",
+      "Metadata utama faktur terektraksi otomatis ke format terstruktur.",
+      "Menghemat waktu hingga 80% dan mempercepat proses approval pembayaran."
+    ],
+    
     status: "LIVE",
     bannerColor: "#b2f5ea",
     flow: "PDF → AI Extraction → Validation → Database",
@@ -108,13 +150,26 @@ export const projects = [
     tag: "WEB SCRAPING",
     title: "Automated Web Scraper",
     desc: "Ekstraksi data lowongan kerja secara terstruktur dari ribuan halaman untuk analisis tren pasar tenaga kerja.",
-    youtubeId: "dQw4w9WgXcQ", // Ganti dengan ID video YouTube lu
-    beforeTime: "Copy-paste manual ratusan halaman web seharian",
-    afterTime: "Proses crawling kilat secara otomatis via script",
+    youtubeId: "_QG5EbNslBU?si=W4LR1ZR6dr3vbK4F",
+    beforeTime: "Pengumpulan manual buka ribuan tab, butuh waktu berhari-hari",
+    afterTime: "Proses crawling kilat secara otomatis via script dalam hitungan menit",
     goal: "Mengumpulkan data publik dalam jumlah besar tanpa terblokir sistem anti-scraping.",
-    problem: "Website target memiliki proteksi rate-limiting dan pagination yang rumit jika diambil secara manual.",
-    solution: "Menggunakan Python Playwright dengan fitur multi-threading dan pembersihan data otomatis.",
-    impact: "Pengambilan data skala besar 10x lebih cepat dibanding metode konvensional.",
+    problem: "Pencarian dan pengumpulan lowongan kerja secara manual memakan waktu lama. Pengguna harus membuka tiap halaman detail dan menyusun ulang data ke format terstruktur.",
+    
+    solution: [
+      "Desktop-based scraper menggunakan Python, Playwright, dan GUI Tkinter.",
+      "Filter pencarian fleksibel: kata kunci, gaji minimum, tanggal posting, dan batas data.",
+      "Ekstraksi data lengkap: Judul, Perusahaan, Gaji, Lokasi, Deskripsi, Link, hingga Tipe Pekerjaan.",
+      "Multi-tab parallel processing (hingga 5 tab simultan) untuk performa maksimal.",
+      "Dilengkapi log aktivitas real-time, error handling timeout, dan progress tracking."
+    ],
+    
+    impact: [
+      "Proses pencarian lowongan jauh lebih cepat dan fleksibel.",
+      "Pengguna dapat memantau progres scraping secara real-time.",
+      "Data langsung tersedia dalam format siap pakai (JSON / Excel) untuk analisis."
+    ],
+    
     status: "LIVE",
     bannerColor: "#8ce8ff",
     flow: "URL → Filter → Scraping → Clean Data → Excel / JSON",
@@ -126,13 +181,24 @@ export const projects = [
     tag: "RPA",
     title: "Automated Billing & Escalation",
     desc: "Pemantauan jatuh tempo tagihan dan pengiriman email reminder berjenjang secara otomatis",
-    youtubeId: "dQw4w9WgXcQ", // Ganti dengan ID video YouTube lu
+    youtubeId: "dQw4w9WgXcQ",
     beforeTime: "Cek manual tanggal Excel satu per satu tiap pagi",
     afterTime: "Email pengingat terkirim otomatis tepat waktu",
     goal: "Memastikan tidak ada tagihan pembayaran yang terlewat atau terlambat di-follow up.",
-    problem: "Keterlambatan follow-up tagihan mengganggu cash flow perusahaan.",
-    solution: "Workflow RPA yang membaca database jadwal tagihan dan otomatis mengirim email laporan & reminder.",
-    impact: "100% akurasi penagihan & memperlancar arus kas bisnis.",
+    problem: "Monitoring manual sering luput, keterlambatan follow-up tagihan mengganggu cash flow perusahaan.",
+    
+    solution: [
+      "Workflow RPA otomatis yang memantau database jadwal tagihan harian.",
+      "Pengecekan logika bisnis & tanggal jatuh tempo (due date) secara real-time.",
+      "Email engine otomatis untuk pengiriman reminder & escalation report berjenjang via SMTP."
+    ],
+    
+    impact: [
+      "100% akurasi penagihan tanpa ada tagihan yang terlewat.",
+      "Memperlancar arus kas (cash flow) bisnis secara konsisten.",
+      "Menghilangkan rutinitas cek tabel manual setiap pagi bagi tim finance."
+    ],
+    
     status: "LIVE",
     bannerColor: "#ffd3e0",
     flow: "Database → Due Date → Business Rules → Email",
@@ -172,25 +238,26 @@ export const advantages = [
   {
     icon: 'Clock',
     badge: 'HEMAT WAKTU',
-    title: 'Kurangi Pekerjaan Manual yang Berulang',
+    // title: 'Kurangi Pekerjaan Manual yang Berulang',
+    title: 'Pangkas 70% – 80% Beban Kerja Manual',
     description: 'Serahkan tugas seperti input data, scraping, pengecekan, dan pemindahan data ke sistem otomatis. Tim bisa menghemat waktu untuk pekerjaan yang lebih penting.'
   },
   {
     icon: 'ShieldCheck',
     badge: 'LEBIH KONSISTEN',
-    title: 'Proses Kerja Lebih Rapi & Konsisten',
+    title: 'Proses Kerja Lebih Rapi & Konsisten, 0% Human Error & Akurasi 100%',
     description: 'Setiap proses dijalankan berdasarkan aturan yang sudah ditentukan. Risiko salah input dan langkah yang terlewat bisa dikurangi dibanding proses manual.'
   },
   {
     icon: 'TrendingUp',
-    badge: 'BERJALAN OTOMATIS',
+    badge: 'BERJALAN OTOMATIS 24/7',
     title: 'Jalankan Proses Tanpa Harus Dipantau Terus',
     description: 'Automation bisa dijalankan berdasarkan jadwal atau kondisi tertentu. Setelah sistem berjalan, proses dapat terus bekerja tanpa perlu dilakukan satu per satu secara manual.'
   },
   {
     icon: 'Cpu',
     badge: 'MUDAH DIKEMBANGKAN',
-    title: 'Bangun Sistem yang Bisa Ikut Bertumbuh',
+    title: 'Bangun Sistem yang Bisa Ikut Bertumbuh, Kapasitas Output Naik Hingga 10x Lipat',
     description: 'Mulai dari satu workflow sederhana, lalu kembangkan sesuai kebutuhan. Scraping, integrasi API, parsing dokumen, hingga proses internal bisa dibuat dalam satu alur kerja.'
   }
 ];
