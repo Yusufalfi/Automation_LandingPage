@@ -10,7 +10,8 @@ export default function ProjectSection({ onViewAllClick, onOpenDemo }) {
         <div className="head">
           <div>
             <small className="tag-eyebrow">03 / PROJECT</small>
-            <h2>Dari Proses Manual Menjadi Automation</h2>
+            {/* <h2>Dari Proses Manual Menjadi Automation</h2> */}
+            <h2 className='title-project'>Bagaimana Saya Mengubah Proses Manual Menjadi Otomatisasi</h2>
           </div>
           <p>
             Contoh project yang menunjukkan bagaimana proses manual diubah menjadi workflow yang lebih otomatis.

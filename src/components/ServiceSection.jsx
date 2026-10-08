@@ -9,7 +9,7 @@ export default function ServiceSection() {
         <div className="head">
           <div>
             <small className="tag-eyebrow">02 / LAYANAN</small>
-            <h2>Yang bisa<br />kami bantu.</h2>
+            <h2>Yang saya bangun</h2>
           </div>
           <p>Fokus pada pekerjaan yang repetitif, berbasis data, dan punya alur yang jelas untuk meningkatkan efisiensi operasional.</p>
         </div>

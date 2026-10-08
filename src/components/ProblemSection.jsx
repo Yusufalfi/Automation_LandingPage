@@ -16,7 +16,7 @@ export default function ProblemSection() {
 
         <div className="grid3">
           {problems.map(x => {
-            const isOther = x[0] === 'OTHER';
+            const isOther = x[0] === 'CUSTOM WORKFLOW';
 
             if (isOther) {
               return (

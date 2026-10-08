@@ -1,57 +1,186 @@
 export const whatsappUrl = 'https://wa.me/6289608095112?text=Halo%20Yusuf%2C%20saya%20ingin%20diskusi%20efisiensi%20proses%20bisnis%20melalui%20automasi.';
 
+
+// export const problems = [
+
+//   [
+//     "WEB DATA",
+//     "Masih copy-paste data dari website?",
+//     "Tim harus membuka halaman satu per satu, mencari informasi yang dibutuhkan, lalu memindahkannya ke spreadsheet secara manual.",
+//     "Data dapat dikumpulkan secara otomatis, diproses, dan disimpan dalam format terstruktur menggunakan web automation."
+//   ],
+
+//   [
+//     "DOCUMENT",
+//     "Invoice dan dokumen masih diproses satu per satu?",
+//     "Data dari PDF, invoice, atau email harus dibaca dan dipindahkan secara manual sebelum bisa digunakan.",
+//     "Dokumen dapat diproses secara otomatis menggunakan document extraction, OCR, dan AI bila diperlukan."
+//   ],
+
+//   [
+//     "REPORTING",
+//     "Laporan rutin masih dikerjakan manual?",
+//     "Tim harus menggabungkan data dari beberapa file, melakukan perhitungan, lalu menyusun dan mengirim laporan secara berulang.",
+//     "Workflow dapat mengambil data, mengolahnya, membuat laporan, dan mengirimkannya secara otomatis berdasarkan jadwal atau kondisi tertentu."
+//   ],
+
+//   [
+//     "EMAIL",
+//     "Follow-up customer atau tagihan sering terlewat?",
+//     "Tim harus memeriksa status customer atau invoice lalu mengirim email pengingat secara manual.",
+//     "Sistem dapat menjalankan follow-up otomatis berdasarkan status, kondisi bisnis, dan jadwal yang telah ditentukan."
+//   ],
+
+//   [
+//     "DATA",
+//     "Data tersebar di banyak sistem?",
+//     "Informasi berada di spreadsheet, database, email, ERP, atau aplikasi lain sehingga tim harus memindahkan data secara manual.",
+//     "Berbagai sistem dapat dihubungkan melalui API, webhook, atau custom integration agar data berpindah secara otomatis."
+//   ],
+
+//   [
+//     "OTHER",
+//     "Punya proses manual yang belum tahu cara mengotomasinya?",
+//     "Tidak semua workflow cocok menggunakan solusi yang sama. Mulai dengan memahami proses, input, output, dan bagian yang paling banyak memakan waktu.",
+//     "Saya dapat menganalisis workflow Anda dan menentukan bagian yang paling masuk akal untuk diotomatisasi."
+//   ]
+
+// ];
+
+// export const services = [
+//   { 
+//     n: "01", 
+//     title: "Otomatisasi Kerja & Sistem Bisnis", 
+//     desc: "Kurangi pekerjaan manual yang berulang dengan sistem otomatis, sehingga tim bisa menghemat waktu dan mengurangi kesalahan input.", 
+//     items: [ 
+//       "Isi data otomatis ke sistem atau aplikasi kantor", 
+//       "Cocokkan data laporan keuangan & Excel secara otomatis", 
+//       "Kirim email dan jalankan pekerjaan rutin secara otomatis" 
+//     ] 
+//   }, 
+//   { 
+//     n: "02", 
+//     title: "Baca Dokumen & Data dengan AI", 
+//     desc: "Gunakan AI untuk membaca informasi dari invoice, nota, surat, dan dokumen lainnya lalu mengubahnya menjadi data yang siap digunakan.", 
+//     items: [ 
+//       "Ambil data dari invoice, nota, & surat jalan", 
+//       "Ekstrak informasi dari dokumen foto atau PDF", 
+//       "Masukkan data dokumen langsung ke sistem perusahaan" 
+//     ] 
+//   }, 
+//   { 
+//     n: "03", 
+//     title: "Pengumpulan Data dari Website", 
+//     desc: "Kumpulkan data dari banyak halaman website secara otomatis dan rapi untuk membantu riset, pemantauan harga, atau analisis kompetitor.", 
+//     items: [ 
+//       "Ambil data produk dari toko online atau marketplace", 
+//       "Kumpulkan data dari banyak halaman secara otomatis", 
+//       "Kirim hasilnya ke Excel, JSON, atau Google Sheets" 
+//     ] 
+//   },
+//   { 
+//     n: "04", 
+//     title: "Website & Aplikasi Bisnis", 
+//     desc: "Buat website atau aplikasi khusus yang membantu bisnis tampil profesional, mempermudah operasional, dan mengurangi pekerjaan manual.", 
+//     items: [ 
+//       "Website promosi yang cepat dan mudah ditemukan di Google", 
+//       "Aplikasi web sesuai kebutuhan bisnis", 
+//       "Hubungkan website dengan pembayaran atau sistem internal" 
+//     ] 
+//   }
+// ];
+
+
 export const problems = [
-  ['WEB DATA', 'Salin data web secara manual?', 'Membuka ribuan halaman web satu per satu, mengutip angka, lalu memindahkannya ke Excel secara manual.', 'Robot Playwright/Python mengambil data ribuan halaman otomatis dengan cepat, akurat, dan terstruktur.'],
-  ['DOCUMENT', 'Validasi invoice & dokumen memakan waktu?', 'PDF menumpuk, angka dicocokkan manual, dan potensi kesalahan manusia (human error) sangat tinggi.', 'Ekstraksi data berbasis AI cerdas yang otomatis membaca, mevalidasi, dan menginput data dokumen.'],
-  ['REPORTING', 'Laporan rutin bikin jam lembur membengkak?', 'Menggabungkan belasan file Excel dari berbagai divisi, menghitung rumus, lalu menyusun laporan berulang.', 'Alur kerja otomatis yang mengolah data, membuat laporan, dan mengirimkannya tepat waktu.'],
-  ['EMAIL', 'Follow-up customer & tagihan sering terlewat?', 'Daftar invoice overdue semakin banyak, namun pesan pengingat masih dikirim manual satu demi satu.', 'Sistem pengingat otomatis berbasis kondisi, kriteria bisnis, dan jadwal yang presisi.'],
-  ['DATA', 'Data tersebar di banyak sistem?', 'Informasi tersebar di Excel, ERP, database, email, dan portal web tanpa integrasi langsung.', 'Integrasi end-to-end yang mengumpulkan dan menyelaraskan seluruh data dalam satu alur terpusat.'],
-  ['OTHER', 'Study case nya berbeda?', 'Bingung harus mulai dari mana? Ceritakan alur kerja operasional yang bikin tim Anda kewalahan.', 'kami menganalisis proses kerja, menentukan bagian yang bisa diotomatisasi, lalu merancang solusi yang sesuai.']
+  [
+    "REPETITIVE WORK",
+    "Pekerjaan yang sama terus diulang setiap hari?",
+    "Tim menghabiskan waktu melakukan langkah yang sama berulang kali, seperti memasukkan data, mengecek informasi, membuat laporan, atau mengirim notifikasi.",
+    "Proses yang repetitif dan memiliki aturan yang jelas biasanya merupakan kandidat yang baik untuk diotomatisasi."
+  ],
+
+  [
+    "MANUAL DATA",
+    "Masih sering copy-paste data antar sistem?",
+    "Informasi harus dipindahkan secara manual dari website, spreadsheet, email, atau aplikasi lain sebelum bisa digunakan.",
+    "Workflow dapat dirancang untuk mengambil, memproses, dan memindahkan data antar sistem secara otomatis."
+  ],
+
+  [
+    "DOCUMENTS",
+    "Banyak dokumen harus diproses satu per satu?",
+    "Invoice, PDF, email attachment, atau dokumen lainnya harus dibaca dan datanya dimasukkan secara manual.",
+    "Proses dokumen dapat dibantu dengan extraction, OCR, dan AI untuk mengubah informasi tidak terstruktur menjadi data yang siap digunakan."
+  ],
+
+  [
+    "MONITORING",
+    "Tim harus terus mengecek sesuatu secara berkala?",
+    "Website, harga, status, transaksi, atau informasi tertentu harus diperiksa berulang kali untuk mengetahui apakah terjadi perubahan.",
+    "Proses monitoring dapat dijalankan secara berkala dan memberikan notifikasi ketika kondisi tertentu terpenuhi."
+  ],
+
+  [
+    "DISCONNECTED SYSTEMS",
+    "Data tersebar di banyak aplikasi?",
+    "Informasi berada di spreadsheet, database, email, CRM, ERP, atau aplikasi lain yang tidak saling terhubung.",
+    "Sistem yang berbeda dapat dihubungkan agar data dapat berpindah dan diproses tanpa harus dipindahkan secara manual."
+  ],
+
+  [
+    "CUSTOM WORKFLOW",
+    "Punya workflow khusus yang sulit dilakukan dengan software biasa?",
+    "Proses bisnis sering memiliki aturan, kondisi, dan kebutuhan khusus yang tidak tersedia dalam software siap pakai.",
+    "Workflow custom dapat dirancang berdasarkan proses, aturan bisnis, input, dan output yang dibutuhkan."
+  ]
 ];
+
 
 export const services = [
-  { 
-    n: "01", 
-    title: "Otomatisasi Kerja & Sistem Bisnis", 
-    desc: "Kurangi pekerjaan manual yang berulang dengan sistem otomatis, sehingga tim bisa menghemat waktu dan mengurangi kesalahan input.", 
-    items: [ 
-      "Isi data otomatis ke sistem atau aplikasi kantor", 
-      "Cocokkan data laporan keuangan & Excel secara otomatis", 
-      "Kirim email dan jalankan pekerjaan rutin secara otomatis" 
-    ] 
-  }, 
-  { 
-    n: "02", 
-    title: "Baca Dokumen & Data dengan AI", 
-    desc: "Gunakan AI untuk membaca informasi dari invoice, nota, surat, dan dokumen lainnya lalu mengubahnya menjadi data yang siap digunakan.", 
-    items: [ 
-      "Ambil data dari invoice, nota, & surat jalan", 
-      "Ekstrak informasi dari dokumen foto atau PDF", 
-      "Masukkan data dokumen langsung ke sistem perusahaan" 
-    ] 
-  }, 
-  { 
-    n: "03", 
-    title: "Pengumpulan Data dari Website", 
-    desc: "Kumpulkan data dari banyak halaman website secara otomatis dan rapi untuk membantu riset, pemantauan harga, atau analisis kompetitor.", 
-    items: [ 
-      "Ambil data produk dari toko online atau marketplace", 
-      "Kumpulkan data dari banyak halaman secara otomatis", 
-      "Kirim hasilnya ke Excel, JSON, atau Google Sheets" 
-    ] 
+  {
+    n: "01",
+    title: "Business Process Automation",
+    desc: "Ubah pekerjaan yang berulang dan berbasis aturan menjadi workflow otomatis yang berjalan konsisten tanpa proses manual yang sama setiap hari.",
+    items: [
+      "Otomatisasi data entry dan pekerjaan administratif",
+      "Jalankan workflow rutin berdasarkan jadwal atau kondisi tertentu",
+      "Hubungkan beberapa proses dan aplikasi menjadi satu workflow"
+    ]
   },
-  { 
-    n: "04", 
-    title: "Website & Aplikasi Bisnis", 
-    desc: "Buat website atau aplikasi khusus yang membantu bisnis tampil profesional, mempermudah operasional, dan mengurangi pekerjaan manual.", 
-    items: [ 
-      "Website promosi yang cepat dan mudah ditemukan di Google", 
-      "Aplikasi web sesuai kebutuhan bisnis", 
-      "Hubungkan website dengan pembayaran atau sistem internal" 
-    ] 
+
+  {
+    n: "02",
+    title: "Document & Data Automation",
+    desc: "Ekstrak informasi dari PDF, invoice, email, dan dokumen lainnya lalu ubah menjadi data terstruktur yang siap diproses oleh sistem.",
+    items: [
+      "Ekstrak data dari invoice, PDF, dan dokumen digital",
+      "Proses dokumen menggunakan OCR dan AI bila diperlukan",
+      "Kirim data hasil ekstraksi ke spreadsheet, database, atau sistem internal"
+    ]
+  },
+
+  {
+    n: "03",
+    title: "Web Scraping & Monitoring",
+    desc: "Kumpulkan, bersihkan, dan monitor data dari website secara otomatis untuk kebutuhan riset, monitoring produk, kompetitor, atau data internal.",
+    items: [
+      "Ekstrak data produk, listing, harga, dan informasi website",
+      "Monitor perubahan data dan website secara berkala",
+      "Export data ke JSON, CSV, spreadsheet, database, atau API"
+    ]
+  },
+
+  {
+    n: "04",
+    title: "API & System Integration",
+    desc: "Hubungkan berbagai aplikasi dan sistem menggunakan API, webhook, dan integrasi khusus agar data dapat berpindah antar sistem secara otomatis.",
+    items: [
+      "Integrasikan aplikasi melalui REST API dan webhook",
+      "Sinkronkan data antar aplikasi, database, dan sistem internal",
+      "Bangun custom integration untuk workflow yang tidak tersedia secara native"
+    ]
   }
 ];
-
 
 export const tools = ['RPA tools', 'Python', 'Playwright', 'SQL', 'AI / LLM', 'Javascript',];
 
@@ -207,58 +336,60 @@ export const projects = [
 ];
 
 
-// const advantages = [
-  //   {
-  //     icon: <Clock size={28} />,
-  //     badge: 'EFISIENSI WAKTU',
-  //     title: 'Pangkas Beban Kerja Hingga 80%',
-  //     description: 'Ucapkan selamat tinggal pada entri data dan tugas berulang yang menyita waktu. Bot menyelesaikan alur kerja rumit yang butuh berjam-jam hanya dalam beberapa detik.'
-  //   },
-  //   {
-  //     icon: <ShieldCheck size={28} />,
-  //     badge: 'AKURASI TINGGI',
-  //     title: '0% Human Error & Sangat Konstan',
-  //     description: 'Manusia bisa lelah, kurang fokus, dan salah ketik. Bot bekerja dengan presisi 100% mengikuti aturan bisnis Anda tanpa pernah salah input.'
-  //   },
-  //   {
-  //     icon: <TrendingUp size={28} />,
-  //     badge: 'PRODUKTIVITAS 24/7',
-  //     title: 'Jalankan Tugas Kapan Saja & Di Mana Saja',
-  //     description: 'Bot bisa dijadwalkan berjalan harian, mingguan, atau real-time. Operasional bisnis Anda tetap aktif dan memproses data bahkan saat tim sedang tidur.'
-  //   },
-  //   {
-  //     icon: <Cpu size={28} />,
-  //     badge: 'SKALABILITAS BISNIS',
-  //     title: 'Fokus ke Strategi & Scaling Bisnis',
-  //     description: 'Biarkan otomasi menangani pekerjaan kasar (scraping, input data, parsing PDF). Tim Anda bisa mengalihkan fokus ke keputusan strategis yang menaikkan omset.'
-  //   }
-  // ];
+// export const advantages = [
+//   {
+//     icon: 'Clock',
+//     badge: 'HEMAT WAKTU',
+//     title: 'Pangkas 70% – 80% Beban Kerja Manual',
+//     description: 'Serahkan tugas seperti input data, scraping, pengecekan, dan pemindahan data ke sistem otomatis. Tim bisa menghemat waktu untuk pekerjaan yang lebih penting.'
+//   },
+//   {
+//     icon: 'ShieldCheck',
+//     badge: 'LEBIH KONSISTEN',
+//     title: 'Proses Kerja Lebih Rapi & Konsisten, 0% Human Error & Akurasi 100%',
+//     description: 'Setiap proses dijalankan berdasarkan aturan yang sudah ditentukan. Risiko salah input dan langkah yang terlewat bisa dikurangi dibanding proses manual.'
+//   },
+//   {
+//     icon: 'TrendingUp',
+//     badge: 'BERJALAN OTOMATIS 24/7',
+//     title: 'Jalankan Proses Tanpa Harus Dipantau Terus',
+//     description: 'Automation bisa dijalankan berdasarkan jadwal atau kondisi tertentu. Setelah sistem berjalan, proses dapat terus bekerja tanpa perlu dilakukan satu per satu secara manual.'
+//   },
+//   {
+//     icon: 'Cpu',
+//     badge: 'MUDAH DIKEMBANGKAN',
+//     title: 'Bangun Sistem yang Bisa Ikut Bertumbuh, Kapasitas Output Naik Hingga 10x Lipat',
+//     description: 'Mulai dari satu workflow sederhana, lalu kembangkan sesuai kebutuhan. Scraping, integrasi API, parsing dokumen, hingga proses internal bisa dibuat dalam satu alur kerja.'
+//   }
+// ];
 
 export const advantages = [
   {
     icon: 'Clock',
-    badge: 'HEMAT WAKTU',
-    // title: 'Kurangi Pekerjaan Manual yang Berulang',
-    title: 'Pangkas 70% – 80% Beban Kerja Manual',
-    description: 'Serahkan tugas seperti input data, scraping, pengecekan, dan pemindahan data ke sistem otomatis. Tim bisa menghemat waktu untuk pekerjaan yang lebih penting.'
+    badge: 'MENGHEMAT WAKTU',
+    title: 'Kurangi Pekerjaan Manual yang Berulang',
+    description: 'Tugas yang sama dan dilakukan berulang kali dapat dijalankan secara otomatis, sehingga tim tidak perlu menghabiskan waktu untuk pekerjaan operasional yang repetitif.'
   },
+
   {
     icon: 'ShieldCheck',
     badge: 'LEBIH KONSISTEN',
-    title: 'Proses Kerja Lebih Rapi & Konsisten, 0% Human Error & Akurasi 100%',
-    description: 'Setiap proses dijalankan berdasarkan aturan yang sudah ditentukan. Risiko salah input dan langkah yang terlewat bisa dikurangi dibanding proses manual.'
+    title: 'Jalankan Proses dengan Aturan yang Jelas',
+    description: 'Workflow dapat mengikuti aturan dan langkah yang telah ditentukan sehingga proses berjalan lebih konsisten dan risiko kesalahan akibat proses manual dapat dikurangi.'
   },
+
   {
     icon: 'TrendingUp',
-    badge: 'BERJALAN OTOMATIS 24/7',
-    title: 'Jalankan Proses Tanpa Harus Dipantau Terus',
-    description: 'Automation bisa dijalankan berdasarkan jadwal atau kondisi tertentu. Setelah sistem berjalan, proses dapat terus bekerja tanpa perlu dilakukan satu per satu secara manual.'
+    badge: 'BERJALAN OTOMATIS',
+    title: 'Biarkan Automation Menjalankan Pekerjaan Rutin',
+    description: 'Workflow dapat dijalankan berdasarkan jadwal, event, atau kondisi tertentu tanpa harus memulai setiap proses secara manual.'
   },
+
   {
     icon: 'Cpu',
-    badge: 'MUDAH DIKEMBANGKAN',
-    title: 'Bangun Sistem yang Bisa Ikut Bertumbuh, Kapasitas Output Naik Hingga 10x Lipat',
-    description: 'Mulai dari satu workflow sederhana, lalu kembangkan sesuai kebutuhan. Scraping, integrasi API, parsing dokumen, hingga proses internal bisa dibuat dalam satu alur kerja.'
+    badge: 'DAPAT DIKEMBANGKAN',
+    title: 'Mulai dari Workflow Sederhana, Kembangkan Sesuai Kebutuhan',
+    description: 'Automation dapat dimulai dari satu proses kemudian dikembangkan untuk menangani lebih banyak data, sistem, atau workflow ketika kebutuhan bisnis bertambah.'
   }
 ];
 
