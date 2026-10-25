@@ -310,7 +310,7 @@ export const projects = [
     tag: "RPA",
     title: "Automated Billing & Escalation",
     desc: "Pemantauan jatuh tempo tagihan dan pengiriman email reminder berjenjang secara otomatis",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "_QG5EbNslBU?si=W4LR1ZR6dr3vbK4F",
     beforeTime: "Cek manual tanggal Excel satu per satu tiap pagi",
     afterTime: "Email pengingat terkirim otomatis tepat waktu",
     goal: "Memastikan tidak ada tagihan pembayaran yang terlewat atau terlambat di-follow up.",
